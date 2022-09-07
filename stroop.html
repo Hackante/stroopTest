@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" version="0.0.1">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stroop Effect</title>
+</head>
+
+<body>
+  <link rel="stylesheet" href="./stroop.css">
+  <h1>Stroop Effect</h1>
+  <p>Click on the button to start the experiment.</p>
+  <button type="button" id="start">Start</button>
+  <p id="timer">60</p>
+  <p class="word" id="word">Click the button to start</p>
+    
+  </script>
+  <div>
+    <p>Click on the color of the word, not the word itself.</p>
+    <div class="grid" id="color-grid">
+      <div class="color-btn" style="background-color: red;">Rot</div>
+      <div class="color-btn" style="background-color: blue;">Blau</div>
+      <div class="color-btn" style="background-color: limegreen;">Grün</div>
+      <div class="color-btn" style="background-color: yellow;">Gelb</div>
+    </div>
+  </div>
+  <div id="results">
+    <p class="result" id="correct">Correct: </p>
+    <p class="result" id="incorrect">Incorrect: </p>
+    <p class="result" id="total">Total: </p>
+    <p class="result" id="accuracy">Accuracy: </p>
+    <p class="result" id="avgTime">Average Time: </p>
+  </div>
+  <button type="button" id="reset">Reset</button>
+
+  <script src="./stroop.js"></script>
+</body>
