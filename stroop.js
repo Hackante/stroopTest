@@ -73,7 +73,9 @@ function reset() {
 function click() {
     if(!gStatus == 1) return console.log("not started");
     let col = this.classList[1].split("-")[1];
+    console.log(col);
     let check = document.getElementById("word").classList.contains(col);
+    console.log(check);
     if (check) {
         results.correct++;
     } else {
