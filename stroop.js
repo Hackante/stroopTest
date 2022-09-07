@@ -72,7 +72,7 @@ function reset() {
 
 function click() {
     if(!gStatus == 1) return console.log("not started");
-    let col = this.style.backgroundColor;
+    let col = this.classList[1].split("-")[1];
     let check = document.getElementById("word").classList.contains(col);
     if (check) {
         results.correct++;
